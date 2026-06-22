@@ -86,10 +86,6 @@ a {
     cursor: pointer;
 }
 
-.hamburger:hover {
-    color:#7287ad;
-}
-
     /* NAVBAR ANIMATION */
 
         .nav-links a:hover {
@@ -258,18 +254,15 @@ input:focus, textarea:focus {
 .contact-button {
     font-family: "Garamond", serif;
     font-size: 1.25rem;
-
-    padding: 0.75rem 1.2rem;
-
-    border: 1px solid #1a1a1a;
     background: none;
-
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 0.75rem 1.2rem;
     cursor: pointer;
-
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.contact-button:hover {
+.contact-button:hover, .contact-button:focus {
     background-color: #1a1a1a;
     color: #f6f2ea;
 }
@@ -310,10 +303,6 @@ input:focus, textarea:focus {
         pointer-events: auto;
     }
 
-    .hamburger.active {
-        color: #7287ad;
-    }
-
     .about {
         flex-direction: column;
         align-items: center;
@@ -323,4 +312,15 @@ input:focus, textarea:focus {
         width: 100%;
         max-width: 300px;
     }
+
+    .hamburger {
+        display: block;
+        color: #1a1a1a;
+    }
+
+    .hamburger:hover,
+    .hamburger.active {
+        color: #7287ad;
+    }
+
 }
