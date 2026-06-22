@@ -13,22 +13,24 @@
     
     <meta name="google-site-verification" content="Rv6ah9lrm4ijlHNtcjI4LewJ1e9avYNJXg6v-T0CmwY" />
 </head>
-    
+
 <body>
 
     <header class="site-header">
         <nav class="navbar">
-
             <div class="logo">
                 <a href="index.html">Luna Hou</a>
             </div>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
         </nav>
     </header>
 
@@ -58,8 +60,6 @@
         <p> © 2026 Luna Hou </p>
     </footer>
 
-</body>
-
 <script>
 window.addEventListener("scroll", function () {
 
@@ -72,6 +72,17 @@ window.addEventListener("scroll", function () {
     }
 
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+
 </script>
+
+</body>
 
 </html>
