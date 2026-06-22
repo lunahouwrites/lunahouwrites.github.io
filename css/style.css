@@ -12,6 +12,15 @@ body {
     background-color: #f6f2ea;
 }
 
+footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.15rem;
+}
+
 h1, h2 {
     font-family: "Emilys Candy", serif;
 }
@@ -20,19 +29,14 @@ p {
     font-size: 1.25rem;
 }
 
+a {
+    color: #7287ad;
+}
+
 .emilys-candy-regular {
   font-family: "Emilys Candy", serif;
   font-weight: 400;
   font-style: normal;
-}
-
-footer {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1.15rem;
 }
 
 /* NAVIGATION BAR */
@@ -179,10 +183,6 @@ footer p {
 
 .publications h1 {
     text-align: center;
-}
-
-.publications a {
-    color: #7287ad;
 }
 
 .pub-list {
