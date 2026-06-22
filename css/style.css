@@ -50,7 +50,7 @@ a {
 .logo a {
     font-family: "Emilys Candy", serif;
     text-decoration: none;
-    color: black;
+    color: #1a1a1a;
     font-size: 1.75rem;
     font-weight: bold;
     transition: color 0.2s ease;
@@ -72,15 +72,27 @@ a {
 .nav-links a {
     font-family: "Emilys Candy", serif;
     text-decoration: none;
-    color: black;
+    color: #1a1a1a;
     font-size: 1.5rem;
     position: relative;
     transition: color 0.2s ease;
 }
 
+.hamburger {
+    display: none;
+    font-size: 1.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger:hover {
+    color:#7287ad;
+}
+
     /* NAVBAR ANIMATION */
 
-        .nav-links a:hover, a:focus {
+        .nav-links a:hover {
             color: #7287ad;
         }
 
@@ -161,19 +173,6 @@ a {
     flex: 1;
 }
 
-@media (max-width: 768px) {
-
-    .about {
-        flex-direction: column;
-    }
-
-    .about-photo img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-}
-
 /* PUBLICATIONS */
 
 .publications {
@@ -190,6 +189,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.pub-details li {
+    line-height: 1.5rem;
 }
 
 blockquote {
@@ -252,7 +255,7 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
-button {
+.contact-button {
     font-family: "Garamond", serif;
     font-size: 1.25rem;
 
@@ -266,7 +269,58 @@ button {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-button:hover {
+.contact-button:hover {
     background-color: #1a1a1a;
     color: #f6f2ea;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        /* positioning */
+        position: absolute;
+        top: 85%;
+        right: 0;
+
+        /* display */
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(246, 242, 234, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 1rem;
+        gap: 2rem;
+
+        /* transition */
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .hamburger.active {
+        color: #7287ad;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
