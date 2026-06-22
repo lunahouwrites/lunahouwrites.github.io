@@ -37,10 +37,8 @@
                 <p>I'd love to connect! Send me a message here. 💌 </p>
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/mzdlbabp" method="POST" autocomplete="off">
+            <form class="contact-form" action="https://formspree.io/f/mzdlbabp" method="POST">
 
-                <input type="hidden" name="_next" value="https://lunahouwrites.github.io/thank-you.html">
-                
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -76,12 +74,5 @@ window.addEventListener("scroll", function () {
 
 });
 </script>
-
-<script>
-window.addEventListener("pageshow", function () {
-    const form = document.querySelector("form");
-    if (form) form.reset();
-});
-</script>
-
+    
 </html>
