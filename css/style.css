@@ -12,15 +12,6 @@ body {
     background-color: #f6f2ea;
 }
 
-footer {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1.15rem;
-}
-
 h1, h2 {
     font-family: "Emilys Candy", serif;
 }
@@ -141,6 +132,33 @@ a {
         .site-header.scrolled {
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
         }
+
+/* FOOTER */
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.15rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.footer-icons a {
+    color: #7287ad;
+    transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+    color: #c8d1df;
+}
 
 /* ABOUT */
 
@@ -316,9 +334,6 @@ input:focus, textarea:focus {
     .hamburger {
         display: block;
         color: #1a1a1a;
-        background: none;
-        border: none;
-        -webkit-tap-highlight-color: transparent;
     }
 
     .hamburger:hover,
