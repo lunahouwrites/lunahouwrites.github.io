@@ -16,7 +16,6 @@
 
     <header class="site-header">
         <nav class="navbar">
-
             <div class="logo">
                 <a href="index.html">Luna Hou</a>
             </div>
@@ -26,7 +25,6 @@
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-
         </nav>
     </header>
 
@@ -51,7 +49,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit" class="contact-button">Send</button>
                 
             </form>
 
@@ -61,8 +59,6 @@
     <footer>
         <p> © 2026 Luna Hou </p>
     </footer>
-
-</body>
 
 <script>
 window.addEventListener("scroll", function () {
@@ -76,6 +72,17 @@ window.addEventListener("scroll", function () {
     }
 
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+
 </script>
-    
+
+</body>
+
 </html>
