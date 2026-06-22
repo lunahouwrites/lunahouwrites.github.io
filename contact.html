@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Luna Hou</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">Luna Hou</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+
+            <div class="contact-heading">
+                <h1>Contact</h1>
+                <p>I'd love to connect! Send me a message here. 💌 </p>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> © 2026 Luna Hou </p>
+    </footer>
+
+</body>
+
+<script>
+window.addEventListener("scroll", function () {
+
+    const header = document.querySelector(".site-header");
+
+    if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+});
+</script>
+
+</html>

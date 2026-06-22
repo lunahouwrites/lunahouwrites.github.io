@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Luna Hou</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">Luna Hou</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about-photo">
+                <img src="images/headshot.jpg" alt="Luna Hou">
+            </div>
+
+            <div class="about-bio">
+                <h1>Luna Hou</h1>
+                <p>
+                    Luna Hou is a Chinese American writer and teacher from North Carolina, 
+                    currently based in New York. Her work is published or forthcoming 
+                    in <i>Uncanny Magazine</i>, <i>Fractured Lit</i>, and <i>One Teen Story</i>.
+                    She is Pushcart-nominated, winner of the NC State
+                    Shorter Fiction Prize and Dorianne Laux Prize for Poetry, and 
+                    her work has been supported by scholarships from the Juniper 
+                    Summer Writing Institute and the Bread Loaf Writers' Conference. 
+                    Her literary obsessions circle around grief, girlhood, and ghosts.</p>
+                <p>She's thankful and happy you're here. 𖹭 </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> © 2026 Luna Hou </p>
+    </footer>
+
+</body>
+
+<script>
+window.addEventListener("scroll", function () {
+
+    const header = document.querySelector(".site-header");
+
+    if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+});
+</script>
+
+</html>
