@@ -326,12 +326,4 @@ input:focus, textarea:focus {
         color: #7287ad;
     }
 
-    .hamburger: focus :{
-        color: black;
-        outline: none;
-
-    .hamburger:focus-visible {
-        outline: 2px solid #7287ad;
-    }
-
 }
