@@ -11,36 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
 </head>
-    
+
 <body>
 
     <header class="site-header">
         <nav class="navbar">
-
             <div class="logo">
                 <a href="index.html">Luna Hou</a>
             </div>
-
-            <ul class="nav-links">
+            
+            <ul class="nav-links" id="navLinks">
                 <li><a href="about.html">About</a></li>
                 <li><a href="publications.html" class="active">Publications</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
         </nav>
     </header>
 
     <main>
         <section class="publications">
-
             <h1>Stories</h1>
 
             <div class="pub-list">
-
                 <div class="pub-item">
                     <h2>The Dragonfly</h2>
                     <p><i>Uncanny Magazine</i>, forthcoming</p>
-                    <ul>
+                    <ul class="pub-details">
                         <li><p>mental illness, queer coming-of-age, grief made seductive & fantastical</p></li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                         But I was small. I had my own asterisms. 
                         I saw my mother like I saw the sky: somehow distant, not quite real.
                         </blockquote>
-                    <ul>
+                    <ul class="pub-details">
                         <li><p>mothers & daughters, grief, fabulism, myth</p></li>
                         <li><p>Nominated for the 2026 Pushcart Prize</p></li>
                     </ul>
@@ -72,14 +72,12 @@
                         that surged through your veins and burst from your chest 
                         and electrified you with their rightness—and I had not yet found them.
                         </blockquote>
-                    <ul>
+                    <ul class="pub-details">
                         <li><p>familial inheritance, belonging, language, coming-of-age</p></li>
                         <li><p>Winner of the 2023 National One Teen Story Contest in the Ages 18-18 Category</p></li>
                     </ul>
                 </div>
-
             </div>
-
         </section>
     </main>
 
@@ -99,7 +97,17 @@ window.addEventListener("scroll", function () {
     }
 
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+
 </script>
 
 </body>
+
 </html>
