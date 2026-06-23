@@ -270,19 +270,23 @@ input:focus, textarea:focus {
 }
 
 .contact-button {
+    width: fit-content;
+    margin: auto;
     font-family: "Garamond", serif;
     font-size: 1.25rem;
-    background: none;
-    color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-    padding: 0.75rem 1.2rem;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #7287ad;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.75rem 3.15rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease;
 }
 
 .contact-button:hover, .contact-button:focus {
-    background-color: #1a1a1a;
-    color: #f6f2ea;
+    background-color: #c8d1df;
 }
 
 /* CV */
