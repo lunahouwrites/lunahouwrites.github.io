@@ -172,7 +172,7 @@ footer p {
 }
 
 .about-photo img {
-    width: 300px;
+    width: 20.5rem;
     height: auto;
     display: block;
 }
@@ -181,6 +181,7 @@ footer p {
     flex: 1;
     display: flex;
     justify-content: center;
+    padding-top: 1rem;
 }
 
 .about-bio {
