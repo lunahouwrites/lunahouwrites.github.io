@@ -30,6 +30,10 @@ a {
   font-style: normal;
 }
 
+.indent {
+  margin-left: 2em;
+}
+
 /* NAVIGATION BAR */
 
 .navbar {
